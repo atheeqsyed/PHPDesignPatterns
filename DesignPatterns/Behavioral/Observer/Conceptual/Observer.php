@@ -5,11 +5,12 @@ namespace DesignPatterns\Behavioral\Observer\Conceptual;
 class Observer implements \SplSubject
 {
     /**
-     * @var int */
+     * @var int
+     */
     public $state;
 
     /**
-     * @var \SplObjectStorage 
+     * @var \SplObjectStorage
      */
     private $observers;
 
@@ -44,7 +45,12 @@ class Observer implements \SplSubject
         }
     }
 
-   
+    /**
+     * Usually, the subscription logic is only a fraction of what a Subject can
+     * really do. Subjects commonly hold some important business logic, that
+     * triggers a notification method whenever something important is about to
+     * happen (or after it).
+     */
     public function someBusinessLogic(): void
     {
         echo "\nSubject: I'm doing something important.\n";
@@ -55,6 +61,10 @@ class Observer implements \SplSubject
     }
 }
 
+/**
+ * Concrete Observers react to the updates issued by the Subject they had been
+ * attached to.
+ */
 class ConcreteObserverA implements \SplSubject
 {
     public function update(\SplSubject $subject): void
