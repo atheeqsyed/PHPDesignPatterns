@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPatterns\Structural\Proxy\Conceptual;
 
 interface Subject
@@ -53,11 +54,8 @@ class Proxy implements Subject
 
 function clientCode(Subject $subject)
 {
-    // ...
-
     $subject->request();
 
-    // ...
 }
 
 echo "Client: Executing the client code with a real subject:<br>";
