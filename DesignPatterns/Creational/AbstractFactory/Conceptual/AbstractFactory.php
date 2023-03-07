@@ -1,12 +1,9 @@
 <?php
-
-
 namespace DesignPatterns\Creational\AbstractFactory\Conceptual;
 
 interface AbstractFactory
 {
     public function createProductA(): AbstractProductA;
-
     public function createProductB(): AbstractProductB;
 }
 
@@ -24,7 +21,7 @@ class ConcreteFactory1 implements AbstractFactory
 }
 
 /**
- * Each Concrete Factory has a corresponding product variant.
+ * Each Concrete Factory has corresponding product variant.
  */
 class ConcreteFactory2 implements AbstractFactory
 {
