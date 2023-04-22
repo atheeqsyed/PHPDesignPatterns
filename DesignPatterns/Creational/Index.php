@@ -1,5 +1,5 @@
 <?php
-// Creational Design Patternn
+// Creational Design Pattern
 use DesignPatterns\Creational\SimpleFactory\AbstractVehicle\ParserFactory;
 
 return __DIR__ . './../../vendor/autoload.php';
