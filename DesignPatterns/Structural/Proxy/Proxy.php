@@ -1,5 +1,4 @@
 <?php
-
 namespace DesignPatterns\Structural\Proxy\Conceptual;
 
 interface Subject
